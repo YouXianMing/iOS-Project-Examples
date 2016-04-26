@@ -1,3 +1,3 @@
 # iOS-Project-Examples
 
-> ### Internationalization（国际化）
+> ### [Internationalization](http://www.cnblogs.com/YouXianMing/p/5435655.html)（国际化）
