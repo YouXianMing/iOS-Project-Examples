@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Internationalization
+
+  Created by YouXianMing on 16/4/26.
+  Copyright © 2016年 YouXianMing. All rights reserved.
+*/
+
+/**
+ *  普通文本
+ */
+"title" = "标题";
+
+/**
+ *  图片名字
+ */
+"icon"  = "cn-icon";
