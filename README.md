@@ -15,3 +15,7 @@ UICollectionViewFlowLayout使用示例
 > ### GridFlowLayoutExample
 
 水平瀑布流使用示例
+
+> ### InfiniteLoopCollectionView
+
+用UICollectionView实现无限轮播图
