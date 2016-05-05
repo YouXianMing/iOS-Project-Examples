@@ -11,3 +11,7 @@ UITableBarController的定制
 > ### UICollectionViewFlowLayoutExample
 
 UICollectionViewFlowLayout使用示例
+
+> ### GridFlowLayoutExample
+
+水平瀑布流使用示例
