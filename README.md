@@ -19,3 +19,7 @@ UICollectionViewFlowLayout使用示例
 > ### InfiniteLoopCollectionView
 
 用UICollectionView实现无限轮播图
+
+定制Tabbar控制器
+
+> ### CustomTabbarViewController
