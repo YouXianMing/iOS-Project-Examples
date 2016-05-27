@@ -20,6 +20,12 @@ UICollectionViewFlowLayout使用示例
 
 用UICollectionView实现无限轮播图
 
-定制Tabbar控制器
+
 
 > ### CustomTabbarViewController
+
+定制Tabbar控制器
+
+> ### DTCoreTextExample
+
+DTCoreText使用示例
