@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1068FD081CF81D3D00BE431C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1068FD071CF81D3D00BE431C /* main.m */; };
+		1068FD0B1CF81D3D00BE431C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1068FD0A1CF81D3D00BE431C /* AppDelegate.m */; };
+		1068FD111CF81D3D00BE431C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1068FD0F1CF81D3D00BE431C /* Main.storyboard */; };
+		1068FD131CF81D3D00BE431C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1068FD121CF81D3D00BE431C /* Assets.xcassets */; };
+		1068FD161CF81D3D00BE431C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1068FD141CF81D3D00BE431C /* LaunchScreen.storyboard */; };
+		1068FD221CF81EE700BE431C /* TransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1068FD211CF81EE700BE431C /* TransitionAnimator.m */; };
+		1068FD281CF824D800BE431C /* UIView+SetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1068FD271CF824D800BE431C /* UIView+SetRect.m */; };
+		1068FD2B1CF8270A00BE431C /* DismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1068FD2A1CF8270A00BE431C /* DismissAnimator.m */; };
+		1068FD2E1CF82AC100BE431C /* UIView+AnimationProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 1068FD2D1CF82AC100BE431C /* UIView+AnimationProperty.m */; };
+		1068FD321CF82F8300BE431C /* CustomUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1068FD311CF82F8300BE431C /* CustomUINavigationController.m */; };
+		1068FD351CF8313600BE431C /* PresentAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1068FD341CF8313600BE431C /* PresentAnimator.m */; };
+		1068FD3B1CF8326B00BE431C /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1068FD3A1CF8326B00BE431C /* PresentViewController.m */; };
+		1068FD3E1CF834BF00BE431C /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1068FD3D1CF834BF00BE431C /* PushViewController.m */; };
+		1068FD431CF8381900BE431C /* PushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1068FD421CF8381900BE431C /* PushAnimator.m */; };
+		1068FD461CF83E9600BE431C /* PopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1068FD451CF83E9600BE431C /* PopAnimator.m */; };
+		1068FD491CF841A900BE431C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1068FD481CF841A900BE431C /* RootViewController.m */; };
+		108B851E1CFBD6780034A8B4 /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 108B851D1CFBD6780034A8B4 /* UIColor+Random.m */; };
+		108B85211CFBE2090034A8B4 /* PUSH & POP.png in Resources */ = {isa = PBXBuildFile; fileRef = 108B85201CFBE2090034A8B4 /* PUSH & POP.png */; };
+		108B85231CFBE2CA0034A8B4 /* 根控制器作为代理需要注意的地方.png in Resources */ = {isa = PBXBuildFile; fileRef = 108B85221CFBE2CA0034A8B4 /* 根控制器作为代理需要注意的地方.png */; };
+		108B85261CFBE43A0034A8B4 /* 设置Present 与 Dismiss 相关事宜.png in Resources */ = {isa = PBXBuildFile; fileRef = 108B85251CFBE43A0034A8B4 /* 设置Present 与 Dismiss 相关事宜.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1068FD031CF81D3D00BE431C /* Animator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1068FD071CF81D3D00BE431C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1068FD091CF81D3D00BE431C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1068FD0A1CF81D3D00BE431C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1068FD101CF81D3D00BE431C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1068FD121CF81D3D00BE431C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1068FD151CF81D3D00BE431C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1068FD171CF81D3D00BE431C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1068FD201CF81EE700BE431C /* TransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimator.h; sourceTree = "<group>"; };
+		1068FD211CF81EE700BE431C /* TransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimator.m; sourceTree = "<group>"; };
+		1068FD261CF824D800BE431C /* UIView+SetRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SetRect.h"; sourceTree = "<group>"; };
+		1068FD271CF824D800BE431C /* UIView+SetRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SetRect.m"; sourceTree = "<group>"; };
+		1068FD291CF8270A00BE431C /* DismissAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissAnimator.h; sourceTree = "<group>"; };
+		1068FD2A1CF8270A00BE431C /* DismissAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissAnimator.m; sourceTree = "<group>"; };
+		1068FD2C1CF82AC100BE431C /* UIView+AnimationProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AnimationProperty.h"; sourceTree = "<group>"; };
+		1068FD2D1CF82AC100BE431C /* UIView+AnimationProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AnimationProperty.m"; sourceTree = "<group>"; };
+		1068FD301CF82F8300BE431C /* CustomUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUINavigationController.h; sourceTree = "<group>"; };
+		1068FD311CF82F8300BE431C /* CustomUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUINavigationController.m; sourceTree = "<group>"; };
+		1068FD331CF8313600BE431C /* PresentAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentAnimator.h; sourceTree = "<group>"; };
+		1068FD341CF8313600BE431C /* PresentAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentAnimator.m; sourceTree = "<group>"; };
+		1068FD391CF8326B00BE431C /* PresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentViewController.h; sourceTree = "<group>"; };
+		1068FD3A1CF8326B00BE431C /* PresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentViewController.m; sourceTree = "<group>"; };
+		1068FD3C1CF834BF00BE431C /* PushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushViewController.h; sourceTree = "<group>"; };
+		1068FD3D1CF834BF00BE431C /* PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
+		1068FD411CF8381900BE431C /* PushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushAnimator.h; sourceTree = "<group>"; };
+		1068FD421CF8381900BE431C /* PushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushAnimator.m; sourceTree = "<group>"; };
+		1068FD441CF83E9600BE431C /* PopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopAnimator.h; sourceTree = "<group>"; };
+		1068FD451CF83E9600BE431C /* PopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopAnimator.m; sourceTree = "<group>"; };
+		1068FD471CF841A900BE431C /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		1068FD481CF841A900BE431C /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		108B851C1CFBD6780034A8B4 /* UIColor+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Random.h"; sourceTree = "<group>"; };
+		108B851D1CFBD6780034A8B4 /* UIColor+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Random.m"; sourceTree = "<group>"; };
+		108B85201CFBE2090034A8B4 /* PUSH & POP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PUSH & POP.png"; sourceTree = "<group>"; };
+		108B85221CFBE2CA0034A8B4 /* 根控制器作为代理需要注意的地方.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "根控制器作为代理需要注意的地方.png"; sourceTree = "<group>"; };
+		108B85251CFBE43A0034A8B4 /* 设置Present 与 Dismiss 相关事宜.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置Present 与 Dismiss 相关事宜.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1068FD001CF81D3D00BE431C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1068FCFA1CF81D3D00BE431C = {
+			isa = PBXGroup;
+			children = (
+				1068FD051CF81D3D00BE431C /* Animator */,
+				1068FD041CF81D3D00BE431C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1068FD041CF81D3D00BE431C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1068FD031CF81D3D00BE431C /* Animator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1068FD051CF81D3D00BE431C /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				1068FD091CF81D3D00BE431C /* AppDelegate.h */,
+				1068FD0A1CF81D3D00BE431C /* AppDelegate.m */,
+				108B851F1CFBE1F60034A8B4 /* PUSH 与 POP 相关事宜 */,
+				108B85241CFBE35C0034A8B4 /* Present 与 Dismiss 相关事宜 */,
+				1068FD301CF82F8300BE431C /* CustomUINavigationController.h */,
+				1068FD311CF82F8300BE431C /* CustomUINavigationController.m */,
+				1068FD471CF841A900BE431C /* RootViewController.h */,
+				1068FD481CF841A900BE431C /* RootViewController.m */,
+				1068FD391CF8326B00BE431C /* PresentViewController.h */,
+				1068FD3A1CF8326B00BE431C /* PresentViewController.m */,
+				1068FD3C1CF834BF00BE431C /* PushViewController.h */,
+				1068FD3D1CF834BF00BE431C /* PushViewController.m */,
+				1068FD2F1CF82B3100BE431C /* TransitionAnimator */,
+				1068FD0F1CF81D3D00BE431C /* Main.storyboard */,
+				1068FD121CF81D3D00BE431C /* Assets.xcassets */,
+				1068FD141CF81D3D00BE431C /* LaunchScreen.storyboard */,
+				1068FD171CF81D3D00BE431C /* Info.plist */,
+				1068FD061CF81D3D00BE431C /* Supporting Files */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		1068FD061CF81D3D00BE431C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1068FD261CF824D800BE431C /* UIView+SetRect.h */,
+				1068FD271CF824D800BE431C /* UIView+SetRect.m */,
+				1068FD2C1CF82AC100BE431C /* UIView+AnimationProperty.h */,
+				1068FD2D1CF82AC100BE431C /* UIView+AnimationProperty.m */,
+				1068FD071CF81D3D00BE431C /* main.m */,
+				108B851C1CFBD6780034A8B4 /* UIColor+Random.h */,
+				108B851D1CFBD6780034A8B4 /* UIColor+Random.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1068FD2F1CF82B3100BE431C /* TransitionAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				1068FD201CF81EE700BE431C /* TransitionAnimator.h */,
+				1068FD211CF81EE700BE431C /* TransitionAnimator.m */,
+				1068FD401CF835B200BE431C /* Push & Pop */,
+				1068FD3F1CF8354100BE431C /* Present & Dismiss */,
+			);
+			name = TransitionAnimator;
+			sourceTree = "<group>";
+		};
+		1068FD3F1CF8354100BE431C /* Present & Dismiss */ = {
+			isa = PBXGroup;
+			children = (
+				1068FD331CF8313600BE431C /* PresentAnimator.h */,
+				1068FD341CF8313600BE431C /* PresentAnimator.m */,
+				1068FD291CF8270A00BE431C /* DismissAnimator.h */,
+				1068FD2A1CF8270A00BE431C /* DismissAnimator.m */,
+			);
+			name = "Present & Dismiss";
+			sourceTree = "<group>";
+		};
+		1068FD401CF835B200BE431C /* Push & Pop */ = {
+			isa = PBXGroup;
+			children = (
+				1068FD411CF8381900BE431C /* PushAnimator.h */,
+				1068FD421CF8381900BE431C /* PushAnimator.m */,
+				1068FD441CF83E9600BE431C /* PopAnimator.h */,
+				1068FD451CF83E9600BE431C /* PopAnimator.m */,
+			);
+			name = "Push & Pop";
+			sourceTree = "<group>";
+		};
+		108B851F1CFBE1F60034A8B4 /* PUSH 与 POP 相关事宜 */ = {
+			isa = PBXGroup;
+			children = (
+				108B85201CFBE2090034A8B4 /* PUSH & POP.png */,
+				108B85221CFBE2CA0034A8B4 /* 根控制器作为代理需要注意的地方.png */,
+			);
+			name = "PUSH 与 POP 相关事宜";
+			sourceTree = "<group>";
+		};
+		108B85241CFBE35C0034A8B4 /* Present 与 Dismiss 相关事宜 */ = {
+			isa = PBXGroup;
+			children = (
+				108B85251CFBE43A0034A8B4 /* 设置Present 与 Dismiss 相关事宜.png */,
+			);
+			name = "Present 与 Dismiss 相关事宜";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1068FD021CF81D3D00BE431C /* Animator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1068FD1A1CF81D3D00BE431C /* Build configuration list for PBXNativeTarget "Animator" */;
+			buildPhases = (
+				1068FCFF1CF81D3D00BE431C /* Sources */,
+				1068FD001CF81D3D00BE431C /* Frameworks */,
+				1068FD011CF81D3D00BE431C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Animator;
+			productName = Animator;
+			productReference = 1068FD031CF81D3D00BE431C /* Animator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1068FCFB1CF81D3D00BE431C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = YouXianMing;
+				TargetAttributes = {
+					1068FD021CF81D3D00BE431C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 1068FCFE1CF81D3D00BE431C /* Build configuration list for PBXProject "Animator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1068FCFA1CF81D3D00BE431C;
+			productRefGroup = 1068FD041CF81D3D00BE431C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1068FD021CF81D3D00BE431C /* Animator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1068FD011CF81D3D00BE431C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1068FD161CF81D3D00BE431C /* LaunchScreen.storyboard in Resources */,
+				1068FD131CF81D3D00BE431C /* Assets.xcassets in Resources */,
+				108B85211CFBE2090034A8B4 /* PUSH & POP.png in Resources */,
+				1068FD111CF81D3D00BE431C /* Main.storyboard in Resources */,
+				108B85261CFBE43A0034A8B4 /* 设置Present 与 Dismiss 相关事宜.png in Resources */,
+				108B85231CFBE2CA0034A8B4 /* 根控制器作为代理需要注意的地方.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1068FCFF1CF81D3D00BE431C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				108B851E1CFBD6780034A8B4 /* UIColor+Random.m in Sources */,
+				1068FD3B1CF8326B00BE431C /* PresentViewController.m in Sources */,
+				1068FD3E1CF834BF00BE431C /* PushViewController.m in Sources */,
+				1068FD221CF81EE700BE431C /* TransitionAnimator.m in Sources */,
+				1068FD2E1CF82AC100BE431C /* UIView+AnimationProperty.m in Sources */,
+				1068FD431CF8381900BE431C /* PushAnimator.m in Sources */,
+				1068FD351CF8313600BE431C /* PresentAnimator.m in Sources */,
+				1068FD2B1CF8270A00BE431C /* DismissAnimator.m in Sources */,
+				1068FD491CF841A900BE431C /* RootViewController.m in Sources */,
+				1068FD0B1CF81D3D00BE431C /* AppDelegate.m in Sources */,
+				1068FD321CF82F8300BE431C /* CustomUINavigationController.m in Sources */,
+				1068FD081CF81D3D00BE431C /* main.m in Sources */,
+				1068FD461CF83E9600BE431C /* PopAnimator.m in Sources */,
+				1068FD281CF824D800BE431C /* UIView+SetRect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1068FD0F1CF81D3D00BE431C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1068FD101CF81D3D00BE431C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1068FD141CF81D3D00BE431C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1068FD151CF81D3D00BE431C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1068FD181CF81D3D00BE431C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1068FD191CF81D3D00BE431C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1068FD1B1CF81D3D00BE431C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Animator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YouXianMing.Animator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1068FD1C1CF81D3D00BE431C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Animator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YouXianMing.Animator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1068FCFE1CF81D3D00BE431C /* Build configuration list for PBXProject "Animator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1068FD181CF81D3D00BE431C /* Debug */,
+				1068FD191CF81D3D00BE431C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1068FD1A1CF81D3D00BE431C /* Build configuration list for PBXNativeTarget "Animator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1068FD1B1CF81D3D00BE431C /* Debug */,
+				1068FD1C1CF81D3D00BE431C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1068FCFB1CF81D3D00BE431C /* Project object */;
+}
