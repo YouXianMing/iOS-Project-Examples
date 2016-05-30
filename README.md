@@ -29,3 +29,7 @@ UICollectionViewFlowLayout使用示例
 > ### DTCoreTextExample
 
 DTCoreText使用示例
+
+> ### Animator
+
+控制器转场动画解析
