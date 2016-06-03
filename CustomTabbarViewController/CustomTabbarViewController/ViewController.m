@@ -21,6 +21,7 @@ typedef enum : NSUInteger {
 
 @interface ViewController ()
 
+@property (nonatomic, strong) UIView               *contentView;
 @property (nonatomic, strong) FirstViewController  *firstVC;
 @property (nonatomic, strong) SecondViewController *secondVC;
 @property (nonatomic, strong) UIViewController     *currentVC;
@@ -35,6 +36,9 @@ typedef enum : NSUInteger {
     
     self.view.backgroundColor = [UIColor whiteColor];
     
+    self.contentView = [[UIView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:self.contentView];
+    
     // 初始化第一个控制器
     self.firstVC   = [FirstViewController new];
     [self addChildViewController:self.firstVC];
@@ -45,7 +49,7 @@ typedef enum : NSUInteger {
     
     // 加载第一个控制器的视图
     [self.firstVC didMoveToParentViewController:self];
-    [self.view addSubview:self.firstVC.view];
+    [self.contentView addSubview:self.firstVC.view];
     
     // 简易存储当前控制器
     self.currentVC = self.firstVC;
@@ -98,10 +102,8 @@ typedef enum : NSUInteger {
                                    options:UIViewAnimationOptionTransitionNone
                                 animations:^{
                                 }  completion:^(BOOL finished) {
-                                    self.currentVC = self.firstVC;
                                     
-                                    // 将按钮设置到最前面
-                                    [self.view bringSubviewToFront:[self.view viewWithTag:kButtonsContentView]];
+                                    self.currentVC = self.firstVC;
                                 }];
         
     } else if (button.tag == kSenondViewController) {
@@ -119,12 +121,9 @@ typedef enum : NSUInteger {
                                    options:UIViewAnimationOptionTransitionNone
                                 animations:^{
                                 }  completion:^(BOOL finished) {
-                                    self.currentVC = self.secondVC;
                                     
-                                    // 将按钮设置到最前面
-                                    [self.view bringSubviewToFront:[self.view viewWithTag:kButtonsContentView]];
+                                    self.currentVC = self.secondVC;
                                 }];
-        
     }
 }
 
