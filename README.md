@@ -20,8 +20,6 @@ UICollectionViewFlowLayout使用示例
 
 用UICollectionView实现无限轮播图
 
-
-
 > ### CustomTabbarViewController
 
 定制Tabbar控制器
@@ -37,3 +35,11 @@ DTCoreText使用示例
 > ### FMDB-Example
 
 FMDB的简易使用
+
+> ### TotalCustomTabBarController
+
+完全定制TabBarController
+
+![demo.gif](http://images2015.cnblogs.com/blog/607542/201606/607542-20160603154850086-1500769047.gif)
+
+![demo.gif](http://images2015.cnblogs.com/blog/607542/201606/607542-20160603154943274-431081136.gif)
