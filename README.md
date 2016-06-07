@@ -43,3 +43,7 @@ FMDB的简易使用
 ![demo.gif](http://images2015.cnblogs.com/blog/607542/201606/607542-20160603154850086-1500769047.gif)
 
 ![demo.gif](http://images2015.cnblogs.com/blog/607542/201606/607542-20160603154943274-431081136.gif)
+
+> ### SideViewController
+
+侧滑栏控制器使用示例
