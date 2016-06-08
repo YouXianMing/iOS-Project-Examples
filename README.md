@@ -47,3 +47,5 @@ FMDB的简易使用
 > ### SideViewController
 
 侧滑栏控制器使用示例
+
+![demo.gif](http://images2015.cnblogs.com/blog/607542/201606/607542-20160608215912949-1615933075.gif)
