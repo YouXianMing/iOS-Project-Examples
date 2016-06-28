@@ -61,3 +61,9 @@ FMDB的简易使用
 [便利的初始化view以及设置tag值](http://www.cnblogs.com/YouXianMing/p/5598514.html)
 
 ![demo.png](http://images2015.cnblogs.com/blog/607542/201606/607542-20160619180408101-811200546.png)
+
+> ### StatusBarAnimation
+
+状态栏动画示例
+
+![demo.gif](/StatusBarAnimation/StatusBarAnimation/demo.gif)
