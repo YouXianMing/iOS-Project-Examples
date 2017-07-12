@@ -67,3 +67,7 @@ FMDB的简易使用
 状态栏动画示例
 
 ![demo.gif](/StatusBarAnimation/StatusBarAnimation/demo.gif)
+
+> ### UICollectionView
+
+定制UICollectionViewLayout的示例
