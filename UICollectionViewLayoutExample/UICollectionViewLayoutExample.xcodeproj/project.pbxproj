@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5D028491F1DBC2400CC192E /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D028481F1DBC2400CC192E /* Math.m */; };
+		C5D0284D1F1DDB2000CC192E /* ComplexLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D0284C1F1DDB2000CC192E /* ComplexLineLayout.m */; };
+		C5D0284F1F1DE0FA00CC192E /* ComplexLineLayout.png in Resources */ = {isa = PBXBuildFile; fileRef = C5D0284E1F1DE0FA00CC192E /* ComplexLineLayout.png */; };
 		C5F054F31F17070C0075B3EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F054F21F17070C0075B3EB /* main.m */; };
 		C5F054F61F17070C0075B3EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F054F51F17070C0075B3EB /* AppDelegate.m */; };
 		C5F054FC1F17070C0075B3EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5F054FA1F17070C0075B3EB /* Main.storyboard */; };
@@ -51,6 +54,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C5D028471F1DBC2400CC192E /* Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Math.h; sourceTree = "<group>"; };
+		C5D028481F1DBC2400CC192E /* Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Math.m; sourceTree = "<group>"; };
+		C5D0284B1F1DDB2000CC192E /* ComplexLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComplexLineLayout.h; sourceTree = "<group>"; };
+		C5D0284C1F1DDB2000CC192E /* ComplexLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComplexLineLayout.m; sourceTree = "<group>"; };
+		C5D0284E1F1DE0FA00CC192E /* ComplexLineLayout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ComplexLineLayout.png; sourceTree = "<group>"; };
 		C5F054EE1F17070C0075B3EB /* UICollectionViewLayoutExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICollectionViewLayoutExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5F054F21F17070C0075B3EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C5F054F41F17070C0075B3EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -150,6 +158,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C5D0284A1F1DBC2700CC192E /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				C5D028471F1DBC2400CC192E /* Math.h */,
+				C5D028481F1DBC2400CC192E /* Math.m */,
+			);
+			name = Math;
+			sourceTree = "<group>";
+		};
 		C5F054E51F17070C0075B3EB = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +297,7 @@
 		C5F0554A1F1707B20075B3EB /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				C5D0284A1F1DBC2700CC192E /* Math */,
 				C5F0557C1F17093D0075B3EB /* DefaultNotificationCenter */,
 				C5F055471F1707970075B3EB /* GCD */,
 				C5F055481F1707A10075B3EB /* UIView+SetRect */,
@@ -364,6 +382,9 @@
 				C5F0557F1F1717040075B3EB /* LineLayoutViewController.m */,
 				C5F055811F1719950075B3EB /* LineLayout.h */,
 				C5F055821F1719950075B3EB /* LineLayout.m */,
+				C5D0284B1F1DDB2000CC192E /* ComplexLineLayout.h */,
+				C5D0284C1F1DDB2000CC192E /* ComplexLineLayout.m */,
+				C5D0284E1F1DE0FA00CC192E /* ComplexLineLayout.png */,
 				C5F055841F1719EE0075B3EB /* LineLayoutCollectionViewCell.h */,
 				C5F055851F1719EE0075B3EB /* LineLayoutCollectionViewCell.m */,
 			);
@@ -431,6 +452,7 @@
 			files = (
 				C5F055011F17070C0075B3EB /* LaunchScreen.storyboard in Resources */,
 				C5F054FE1F17070C0075B3EB /* Assets.xcassets in Resources */,
+				C5D0284F1F1DE0FA00CC192E /* ComplexLineLayout.png in Resources */,
 				C5F054FC1F17070C0075B3EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +468,7 @@
 				C5F055601F1708330075B3EB /* GridLayout.m in Sources */,
 				C5F055311F1707860075B3EB /* MASViewAttribute.m in Sources */,
 				C5F055781F1708FB0075B3EB /* CustomViewController.m in Sources */,
+				C5D0284D1F1DDB2000CC192E /* ComplexLineLayout.m in Sources */,
 				C5F055571F1708200075B3EB /* FooterCollectionReusableView.m in Sources */,
 				C5F055361F1707870075B3EB /* ViewController+MASAdditions.m in Sources */,
 				C5F055331F1707860075B3EB /* NSArray+MASAdditions.m in Sources */,
@@ -455,6 +478,7 @@
 				C5F055721F1708460075B3EB /* GridLayoutHeaderView.m in Sources */,
 				C5F055391F17078D0075B3EB /* UIView+SetRect.m in Sources */,
 				C5F055321F1707860075B3EB /* MASViewConstraint.m in Sources */,
+				C5D028491F1DBC2400CC192E /* Math.m in Sources */,
 				C5F055301F1707860075B3EB /* MASLayoutConstraint.m in Sources */,
 				C5F054F61F17070C0075B3EB /* AppDelegate.m in Sources */,
 				C5F0550D1F1707360075B3EB /* ListViewController.m in Sources */,
@@ -638,6 +662,7 @@
 				C5F055071F17070C0075B3EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -24,7 +24,7 @@
     if (self = [super initWithFrame:frame]) {
         
         self.layer.borderWidth = 0.5f;
-        self.layer.borderColor = [UIColor redColor].CGColor;
+        self.layer.borderColor = [[UIColor redColor] colorWithAlphaComponent:0.25f].CGColor;
         
         self.areaView                 = [UIView new];
         self.areaView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.25];

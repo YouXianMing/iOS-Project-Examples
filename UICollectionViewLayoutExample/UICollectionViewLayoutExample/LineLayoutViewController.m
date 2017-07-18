@@ -8,15 +8,16 @@
 
 #import "LineLayoutViewController.h"
 #import "LineLayout.h"
+#import "ComplexLineLayout.h"
 #import "LineLayoutCollectionViewCell.h"
 
 static NSString *reuseIdentifier = @"reuseIdentifier";
 
 @interface LineLayoutViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 
-@property (nonatomic, strong) UICollectionView *collectionView;
-@property (nonatomic, strong) LineLayout       *layout;
-@property (nonatomic, strong) NSMutableArray   *datasArray;
+@property (nonatomic, strong) UICollectionView       *collectionView;
+@property (nonatomic, strong) UICollectionViewLayout *layout;
+@property (nonatomic, strong) NSMutableArray         *datasArray;
 
 @end
 
@@ -31,13 +32,14 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
         
         [names addObject:UIApplicationDidChangeStatusBarOrientationNotification];
     }];
-    
-    self.layout = [LineLayout new];
+
+    // 布局文件
+    self.layout = arc4random() % 2 ? [ComplexLineLayout new] : [LineLayout new];
     
     self.collectionView                 = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.layout];
     self.collectionView.delegate        = self;
     self.collectionView.dataSource      = self;
-    self.collectionView.contentInset    = UIEdgeInsetsMake(10, 20, 10, 20);
+    self.collectionView.contentInset    = UIEdgeInsetsMake(10, 50, 10, 50);
     self.collectionView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.collectionView];
     
@@ -58,10 +60,10 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     
     // debug用,显示UICollectionView的contentInset区域
     UIView *debugView                = [UIView new];
-    debugView.backgroundColor        = [[UIColor yellowColor] colorWithAlphaComponent:0.15f];
+    debugView.backgroundColor        = [[UIColor yellowColor] colorWithAlphaComponent:0.05f];
     debugView.userInteractionEnabled = NO;
     debugView.layer.borderWidth      = 0.5f;
-    debugView.layer.borderColor      = [UIColor grayColor].CGColor;
+    debugView.layer.borderColor      = [[UIColor grayColor] colorWithAlphaComponent:0.15f].CGColor;
     [self.view addSubview:debugView];
     [debugView mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -94,6 +96,11 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     [cell loadContent];
     
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
 }
 
 #pragma mark - DefaultNotificationCenterDelegate
