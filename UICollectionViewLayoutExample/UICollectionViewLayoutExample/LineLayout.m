@@ -86,30 +86,13 @@
 
     UIEdgeInsets contentInsets = self.collectionView.contentInset;
     
-    // 校正后的位移
+    // 校正后的目的位移(偏移量从0开始,方便计算)
     CGFloat offsetX = proposedContentOffset.x + contentInsets.left;
     
-    // 求取的数值
-    CGFloat value = offsetX / _itemWidth;
+    // 计算后的整数倍目标位移(四舍五入计算)
+    CGFloat resultIntOffsetX = round(offsetX / _itemWidth) * _itemWidth - contentInsets.left;
     
-    // 获取整数部分
-    CGFloat intValue = floor(value);
-    
-    // 获取小数部分
-    CGFloat floatValue = value - intValue;
-    
-    // 进行计算
-    CGFloat outOffsetX = 0;
-    if (floatValue >= 0 && floatValue < 0.5f) {
-        
-        outOffsetX = intValue * _itemWidth;
-        
-    } else {
-        
-        outOffsetX = (intValue + 1) * _itemWidth;
-    }
-    
-    return CGPointMake(outOffsetX - contentInsets.left, proposedContentOffset.y);
+    return CGPointMake(resultIntOffsetX, proposedContentOffset.y);
 }
 
 @end
