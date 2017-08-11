@@ -14,6 +14,11 @@
 		C560B78D1F3D42E30058B9C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C560B78C1F3D42E30058B9C5 /* Assets.xcassets */; };
 		C560B7901F3D42E30058B9C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C560B78E1F3D42E30058B9C5 /* LaunchScreen.storyboard */; };
 		C560B79A1F3D43A70058B9C5 /* MathSort.m in Sources */ = {isa = PBXBuildFile; fileRef = C560B7991F3D43A70058B9C5 /* MathSort.m */; };
+		C560B79E1F3D453E0058B9C5 /* RegexManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C560B79D1F3D453E0058B9C5 /* RegexManager.m */; };
+		C560B7A21F3D4BA70058B9C5 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = C560B7A11F3D4BA70058B9C5 /* Stack.m */; };
+		C560B7A81F3D4F9E0058B9C5 /* Number.m in Sources */ = {isa = PBXBuildFile; fileRef = C560B7A71F3D4F9E0058B9C5 /* Number.m */; };
+		C560B7AB1F3D4FA80058B9C5 /* Mark.m in Sources */ = {isa = PBXBuildFile; fileRef = C560B7AA1F3D4FA80058B9C5 /* Mark.m */; };
+		C560B7AE1F3D59F90058B9C5 /* PostfixExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = C560B7AD1F3D59F90058B9C5 /* PostfixExpression.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,16 @@
 		C560B7971F3D43440058B9C5 /* INLINE_METHOD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = INLINE_METHOD.h; sourceTree = "<group>"; };
 		C560B7981F3D43A70058B9C5 /* MathSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathSort.h; sourceTree = "<group>"; };
 		C560B7991F3D43A70058B9C5 /* MathSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathSort.m; sourceTree = "<group>"; };
+		C560B79C1F3D453E0058B9C5 /* RegexManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexManager.h; sourceTree = "<group>"; };
+		C560B79D1F3D453E0058B9C5 /* RegexManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexManager.m; sourceTree = "<group>"; };
+		C560B7A01F3D4BA70058B9C5 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		C560B7A11F3D4BA70058B9C5 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		C560B7A61F3D4F9E0058B9C5 /* Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Number.h; sourceTree = "<group>"; };
+		C560B7A71F3D4F9E0058B9C5 /* Number.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Number.m; sourceTree = "<group>"; };
+		C560B7A91F3D4FA80058B9C5 /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
+		C560B7AA1F3D4FA80058B9C5 /* Mark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mark.m; sourceTree = "<group>"; };
+		C560B7AC1F3D59F90058B9C5 /* PostfixExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostfixExpression.h; sourceTree = "<group>"; };
+		C560B7AD1F3D59F90058B9C5 /* PostfixExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostfixExpression.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +81,15 @@
 				C560B7841F3D42E30058B9C5 /* AppDelegate.m */,
 				C560B7861F3D42E30058B9C5 /* ViewController.h */,
 				C560B7871F3D42E30058B9C5 /* ViewController.m */,
+				C560B7AC1F3D59F90058B9C5 /* PostfixExpression.h */,
+				C560B7AD1F3D59F90058B9C5 /* PostfixExpression.m */,
+				C560B7A01F3D4BA70058B9C5 /* Stack.h */,
+				C560B7A11F3D4BA70058B9C5 /* Stack.m */,
+				C560B7A61F3D4F9E0058B9C5 /* Number.h */,
+				C560B7A71F3D4F9E0058B9C5 /* Number.m */,
+				C560B7A91F3D4FA80058B9C5 /* Mark.h */,
+				C560B7AA1F3D4FA80058B9C5 /* Mark.m */,
+				C560B79F1F3D45400058B9C5 /* RegexManager */,
 				C560B79B1F3D44AB0058B9C5 /* MathSort */,
 				C560B7891F3D42E30058B9C5 /* Main.storyboard */,
 				C560B78C1F3D42E30058B9C5 /* Assets.xcassets */,
@@ -92,6 +116,15 @@
 				C560B7971F3D43440058B9C5 /* INLINE_METHOD.h */,
 			);
 			name = MathSort;
+			sourceTree = "<group>";
+		};
+		C560B79F1F3D45400058B9C5 /* RegexManager */ = {
+			isa = PBXGroup;
+			children = (
+				C560B79C1F3D453E0058B9C5 /* RegexManager.h */,
+				C560B79D1F3D453E0058B9C5 /* RegexManager.m */,
+			);
+			name = RegexManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +199,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C560B7A21F3D4BA70058B9C5 /* Stack.m in Sources */,
 				C560B7881F3D42E30058B9C5 /* ViewController.m in Sources */,
 				C560B7851F3D42E30058B9C5 /* AppDelegate.m in Sources */,
 				C560B7821F3D42E30058B9C5 /* main.m in Sources */,
+				C560B7AB1F3D4FA80058B9C5 /* Mark.m in Sources */,
+				C560B7A81F3D4F9E0058B9C5 /* Number.m in Sources */,
+				C560B7AE1F3D59F90058B9C5 /* PostfixExpression.m in Sources */,
+				C560B79E1F3D453E0058B9C5 /* RegexManager.m in Sources */,
 				C560B79A1F3D43A70058B9C5 /* MathSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +366,7 @@
 				C560B7961F3D42E30058B9C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
