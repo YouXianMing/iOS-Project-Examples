@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5D4CEA42007063800515E1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4CEA32007063800515E1A /* AppDelegate.m */; };
+		C5D4CEAC2007063800515E1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5D4CEAB2007063800515E1A /* Assets.xcassets */; };
+		C5D4CEAF2007063800515E1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5D4CEAD2007063800515E1A /* LaunchScreen.storyboard */; };
+		C5D4CEB22007063800515E1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4CEB12007063800515E1A /* main.m */; };
+		C5D4CEBA200708C200515E1A /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4CEB9200708C200515E1A /* ListTableViewController.m */; };
+		C5D4CEBD2007094B00515E1A /* ListTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4CEBC2007094B00515E1A /* ListTableViewModel.m */; };
+		C5D4CEC020070D0800515E1A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4CEBF20070D0800515E1A /* BaseViewController.m */; };
+		C5D4CEC520070D3500515E1A /* UIView+SetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4CEC220070D3500515E1A /* UIView+SetRect.m */; };
+		C5D4CEC620070D3500515E1A /* UIView+DebugFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4CEC420070D3500515E1A /* UIView+DebugFrame.m */; };
+		C5D4CECB20070F7100515E1A /* DragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4CECA20070F7100515E1A /* DragViewController.m */; };
+		C5D4CED1200717A100515E1A /* DragAndResizeVer1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4CED0200717A100515E1A /* DragAndResizeVer1ViewController.m */; };
+		C5D4CED420071A9400515E1A /* DragAndResizeVer2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4CED320071A9400515E1A /* DragAndResizeVer2ViewController.m */; };
+		C5D4CED720071B3E00515E1A /* DragAndResizeVer3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4CED620071B3E00515E1A /* DragAndResizeVer3ViewController.m */; };
+		C5D4CEDD2007230500515E1A /* DragAndResizeVer4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4CEDC2007230500515E1A /* DragAndResizeVer4ViewController.m */; };
+		C5D4CEE22007373D00515E1A /* DragAndResizeVer5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4CEE12007373D00515E1A /* DragAndResizeVer5ViewController.m */; };
+		C5D4CEE6200744CC00515E1A /* DragAndResizeVer6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4CEE5200744CC00515E1A /* DragAndResizeVer6ViewController.m */; };
+		C5D4CEEB200746EA00515E1A /* DragAndResizeVer7ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4CEEA200746EA00515E1A /* DragAndResizeVer7ViewController.m */; };
+		C5D4CEEF2007499000515E1A /* CropImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4CEEE2007499000515E1A /* CropImageViewController.m */; };
+		C5D4CEF220074B4900515E1A /* pic_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C5D4CEF120074B4900515E1A /* pic_2.png */; };
+		C5D4CEF520074E3C00515E1A /* UIView+ConvertRect.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4CEF420074E3C00515E1A /* UIView+ConvertRect.m */; };
+		C5D4CEF72007524800515E1A /* pic_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C5D4CEF62007524800515E1A /* pic_1.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C5D4CE9F2007063800515E1A /* DragAndCrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragAndCrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5D4CEA22007063800515E1A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C5D4CEA32007063800515E1A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C5D4CEAB2007063800515E1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5D4CEAE2007063800515E1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5D4CEB02007063800515E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5D4CEB12007063800515E1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C5D4CEB8200708C200515E1A /* ListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
+		C5D4CEB9200708C200515E1A /* ListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
+		C5D4CEBB2007094B00515E1A /* ListTableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListTableViewModel.h; sourceTree = "<group>"; };
+		C5D4CEBC2007094B00515E1A /* ListTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListTableViewModel.m; sourceTree = "<group>"; };
+		C5D4CEBE20070D0800515E1A /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		C5D4CEBF20070D0800515E1A /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		C5D4CEC120070D3400515E1A /* UIView+SetRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SetRect.h"; sourceTree = "<group>"; };
+		C5D4CEC220070D3500515E1A /* UIView+SetRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SetRect.m"; sourceTree = "<group>"; };
+		C5D4CEC320070D3500515E1A /* UIView+DebugFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DebugFrame.h"; sourceTree = "<group>"; };
+		C5D4CEC420070D3500515E1A /* UIView+DebugFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DebugFrame.m"; sourceTree = "<group>"; };
+		C5D4CEC920070F7100515E1A /* DragViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragViewController.h; sourceTree = "<group>"; };
+		C5D4CECA20070F7100515E1A /* DragViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragViewController.m; sourceTree = "<group>"; };
+		C5D4CECF200717A100515E1A /* DragAndResizeVer1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragAndResizeVer1ViewController.h; sourceTree = "<group>"; };
+		C5D4CED0200717A100515E1A /* DragAndResizeVer1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragAndResizeVer1ViewController.m; sourceTree = "<group>"; };
+		C5D4CED220071A9400515E1A /* DragAndResizeVer2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragAndResizeVer2ViewController.h; sourceTree = "<group>"; };
+		C5D4CED320071A9400515E1A /* DragAndResizeVer2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragAndResizeVer2ViewController.m; sourceTree = "<group>"; };
+		C5D4CED520071B3E00515E1A /* DragAndResizeVer3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragAndResizeVer3ViewController.h; sourceTree = "<group>"; };
+		C5D4CED620071B3E00515E1A /* DragAndResizeVer3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragAndResizeVer3ViewController.m; sourceTree = "<group>"; };
+		C5D4CEDB2007230500515E1A /* DragAndResizeVer4ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragAndResizeVer4ViewController.h; sourceTree = "<group>"; };
+		C5D4CEDC2007230500515E1A /* DragAndResizeVer4ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragAndResizeVer4ViewController.m; sourceTree = "<group>"; };
+		C5D4CEE02007373D00515E1A /* DragAndResizeVer5ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragAndResizeVer5ViewController.h; sourceTree = "<group>"; };
+		C5D4CEE12007373D00515E1A /* DragAndResizeVer5ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragAndResizeVer5ViewController.m; sourceTree = "<group>"; };
+		C5D4CEE4200744CC00515E1A /* DragAndResizeVer6ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragAndResizeVer6ViewController.h; sourceTree = "<group>"; };
+		C5D4CEE5200744CC00515E1A /* DragAndResizeVer6ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragAndResizeVer6ViewController.m; sourceTree = "<group>"; };
+		C5D4CEE9200746EA00515E1A /* DragAndResizeVer7ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragAndResizeVer7ViewController.h; sourceTree = "<group>"; };
+		C5D4CEEA200746EA00515E1A /* DragAndResizeVer7ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragAndResizeVer7ViewController.m; sourceTree = "<group>"; };
+		C5D4CEED2007499000515E1A /* CropImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CropImageViewController.h; sourceTree = "<group>"; };
+		C5D4CEEE2007499000515E1A /* CropImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CropImageViewController.m; sourceTree = "<group>"; };
+		C5D4CEF120074B4900515E1A /* pic_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic_2.png; sourceTree = "<group>"; };
+		C5D4CEF320074E3C00515E1A /* UIView+ConvertRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ConvertRect.h"; sourceTree = "<group>"; };
+		C5D4CEF420074E3C00515E1A /* UIView+ConvertRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ConvertRect.m"; sourceTree = "<group>"; };
+		C5D4CEF62007524800515E1A /* pic_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic_1.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5D4CE9C2007063800515E1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5D4CE962007063800515E1A = {
+			isa = PBXGroup;
+			children = (
+				C5D4CEA12007063800515E1A /* DragAndCrop */,
+				C5D4CEA02007063800515E1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5D4CEA02007063800515E1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5D4CE9F2007063800515E1A /* DragAndCrop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5D4CEA12007063800515E1A /* DragAndCrop */ = {
+			isa = PBXGroup;
+			children = (
+				C5D4CEA22007063800515E1A /* AppDelegate.h */,
+				C5D4CEA32007063800515E1A /* AppDelegate.m */,
+				C5D4CEB8200708C200515E1A /* ListTableViewController.h */,
+				C5D4CEB9200708C200515E1A /* ListTableViewController.m */,
+				C5D4CEBB2007094B00515E1A /* ListTableViewModel.h */,
+				C5D4CEBC2007094B00515E1A /* ListTableViewModel.m */,
+				C5D4CEBE20070D0800515E1A /* BaseViewController.h */,
+				C5D4CEBF20070D0800515E1A /* BaseViewController.m */,
+				C5D4CEC820070EC800515E1A /* Controllers */,
+				C5D4CEC720070D3700515E1A /* Files */,
+				C5D4CEAB2007063800515E1A /* Assets.xcassets */,
+				C5D4CEAD2007063800515E1A /* LaunchScreen.storyboard */,
+				C5D4CEB02007063800515E1A /* Info.plist */,
+				C5D4CEB12007063800515E1A /* main.m */,
+			);
+			path = DragAndCrop;
+			sourceTree = "<group>";
+		};
+		C5D4CEC720070D3700515E1A /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5D4CEF62007524800515E1A /* pic_1.png */,
+				C5D4CEF120074B4900515E1A /* pic_2.png */,
+				C5D4CEF320074E3C00515E1A /* UIView+ConvertRect.h */,
+				C5D4CEF420074E3C00515E1A /* UIView+ConvertRect.m */,
+				C5D4CEC320070D3500515E1A /* UIView+DebugFrame.h */,
+				C5D4CEC420070D3500515E1A /* UIView+DebugFrame.m */,
+				C5D4CEC120070D3400515E1A /* UIView+SetRect.h */,
+				C5D4CEC220070D3500515E1A /* UIView+SetRect.m */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		C5D4CEC820070EC800515E1A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5D4CEDE2007230B00515E1A /* DragViewController */,
+				C5D4CED82007225600515E1A /* DragAndResizeVer1ViewController */,
+				C5D4CED92007225F00515E1A /* DragAndResizeVer2ViewController */,
+				C5D4CEDA2007226800515E1A /* DragAndResizeVer3ViewController */,
+				C5D4CEDF2007231400515E1A /* DragAndResizeVer4ViewController */,
+				C5D4CEE32007374800515E1A /* DragAndResizeVer5ViewController */,
+				C5D4CEE8200744F600515E1A /* DragAndResizeVer6ViewController */,
+				C5D4CEEC200746F100515E1A /* DragAndResizeVer7ViewController */,
+				C5D4CEF02007499D00515E1A /* CropImageViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C5D4CED82007225600515E1A /* DragAndResizeVer1ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C5D4CECF200717A100515E1A /* DragAndResizeVer1ViewController.h */,
+				C5D4CED0200717A100515E1A /* DragAndResizeVer1ViewController.m */,
+			);
+			path = DragAndResizeVer1ViewController;
+			sourceTree = "<group>";
+		};
+		C5D4CED92007225F00515E1A /* DragAndResizeVer2ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C5D4CED220071A9400515E1A /* DragAndResizeVer2ViewController.h */,
+				C5D4CED320071A9400515E1A /* DragAndResizeVer2ViewController.m */,
+			);
+			path = DragAndResizeVer2ViewController;
+			sourceTree = "<group>";
+		};
+		C5D4CEDA2007226800515E1A /* DragAndResizeVer3ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C5D4CED520071B3E00515E1A /* DragAndResizeVer3ViewController.h */,
+				C5D4CED620071B3E00515E1A /* DragAndResizeVer3ViewController.m */,
+			);
+			path = DragAndResizeVer3ViewController;
+			sourceTree = "<group>";
+		};
+		C5D4CEDE2007230B00515E1A /* DragViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C5D4CEC920070F7100515E1A /* DragViewController.h */,
+				C5D4CECA20070F7100515E1A /* DragViewController.m */,
+			);
+			path = DragViewController;
+			sourceTree = "<group>";
+		};
+		C5D4CEDF2007231400515E1A /* DragAndResizeVer4ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C5D4CEDB2007230500515E1A /* DragAndResizeVer4ViewController.h */,
+				C5D4CEDC2007230500515E1A /* DragAndResizeVer4ViewController.m */,
+			);
+			path = DragAndResizeVer4ViewController;
+			sourceTree = "<group>";
+		};
+		C5D4CEE32007374800515E1A /* DragAndResizeVer5ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C5D4CEE02007373D00515E1A /* DragAndResizeVer5ViewController.h */,
+				C5D4CEE12007373D00515E1A /* DragAndResizeVer5ViewController.m */,
+			);
+			path = DragAndResizeVer5ViewController;
+			sourceTree = "<group>";
+		};
+		C5D4CEE8200744F600515E1A /* DragAndResizeVer6ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C5D4CEE4200744CC00515E1A /* DragAndResizeVer6ViewController.h */,
+				C5D4CEE5200744CC00515E1A /* DragAndResizeVer6ViewController.m */,
+			);
+			path = DragAndResizeVer6ViewController;
+			sourceTree = "<group>";
+		};
+		C5D4CEEC200746F100515E1A /* DragAndResizeVer7ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C5D4CEE9200746EA00515E1A /* DragAndResizeVer7ViewController.h */,
+				C5D4CEEA200746EA00515E1A /* DragAndResizeVer7ViewController.m */,
+			);
+			path = DragAndResizeVer7ViewController;
+			sourceTree = "<group>";
+		};
+		C5D4CEF02007499D00515E1A /* CropImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C5D4CEED2007499000515E1A /* CropImageViewController.h */,
+				C5D4CEEE2007499000515E1A /* CropImageViewController.m */,
+			);
+			path = CropImageViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5D4CE9E2007063800515E1A /* DragAndCrop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5D4CEB52007063800515E1A /* Build configuration list for PBXNativeTarget "DragAndCrop" */;
+			buildPhases = (
+				C5D4CE9B2007063800515E1A /* Sources */,
+				C5D4CE9C2007063800515E1A /* Frameworks */,
+				C5D4CE9D2007063800515E1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DragAndCrop;
+			productName = DragAndCrop;
+			productReference = C5D4CE9F2007063800515E1A /* DragAndCrop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5D4CE972007063800515E1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Techcode;
+				TargetAttributes = {
+					C5D4CE9E2007063800515E1A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C5D4CE9A2007063800515E1A /* Build configuration list for PBXProject "DragAndCrop" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5D4CE962007063800515E1A;
+			productRefGroup = C5D4CEA02007063800515E1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5D4CE9E2007063800515E1A /* DragAndCrop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5D4CE9D2007063800515E1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D4CEF220074B4900515E1A /* pic_2.png in Resources */,
+				C5D4CEAF2007063800515E1A /* LaunchScreen.storyboard in Resources */,
+				C5D4CEAC2007063800515E1A /* Assets.xcassets in Resources */,
+				C5D4CEF72007524800515E1A /* pic_1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5D4CE9B2007063800515E1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D4CED1200717A100515E1A /* DragAndResizeVer1ViewController.m in Sources */,
+				C5D4CEDD2007230500515E1A /* DragAndResizeVer4ViewController.m in Sources */,
+				C5D4CEF520074E3C00515E1A /* UIView+ConvertRect.m in Sources */,
+				C5D4CEC020070D0800515E1A /* BaseViewController.m in Sources */,
+				C5D4CEB22007063800515E1A /* main.m in Sources */,
+				C5D4CED720071B3E00515E1A /* DragAndResizeVer3ViewController.m in Sources */,
+				C5D4CEA42007063800515E1A /* AppDelegate.m in Sources */,
+				C5D4CEC620070D3500515E1A /* UIView+DebugFrame.m in Sources */,
+				C5D4CECB20070F7100515E1A /* DragViewController.m in Sources */,
+				C5D4CEBA200708C200515E1A /* ListTableViewController.m in Sources */,
+				C5D4CED420071A9400515E1A /* DragAndResizeVer2ViewController.m in Sources */,
+				C5D4CEEF2007499000515E1A /* CropImageViewController.m in Sources */,
+				C5D4CEBD2007094B00515E1A /* ListTableViewModel.m in Sources */,
+				C5D4CEE6200744CC00515E1A /* DragAndResizeVer6ViewController.m in Sources */,
+				C5D4CEC520070D3500515E1A /* UIView+SetRect.m in Sources */,
+				C5D4CEE22007373D00515E1A /* DragAndResizeVer5ViewController.m in Sources */,
+				C5D4CEEB200746EA00515E1A /* DragAndResizeVer7ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C5D4CEAD2007063800515E1A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5D4CEAE2007063800515E1A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5D4CEB32007063800515E1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C5D4CEB42007063800515E1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5D4CEB62007063800515E1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HT95VAK372;
+				INFOPLIST_FILE = DragAndCrop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.techcode.DragAndCrop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5D4CEB72007063800515E1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HT95VAK372;
+				INFOPLIST_FILE = DragAndCrop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.techcode.DragAndCrop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5D4CE9A2007063800515E1A /* Build configuration list for PBXProject "DragAndCrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5D4CEB32007063800515E1A /* Debug */,
+				C5D4CEB42007063800515E1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5D4CEB52007063800515E1A /* Build configuration list for PBXNativeTarget "DragAndCrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5D4CEB62007063800515E1A /* Debug */,
+				C5D4CEB72007063800515E1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5D4CE972007063800515E1A /* Project object */;
+}
