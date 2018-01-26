@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C594D3CA2019BDEF00F5CC10 /* DragViewVer2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C594D3C92019BDEF00F5CC10 /* DragViewVer2ViewController.m */; };
+		C594D3D12019BEB500F5CC10 /* TwoItemRectDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = C594D3D02019BEB500F5CC10 /* TwoItemRectDragView.m */; };
+		C594D3D72019D14000F5CC10 /* TwoItemVtDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = C594D3D62019D14000F5CC10 /* TwoItemVtDragView.m */; };
 		C5D4CEA42007063800515E1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4CEA32007063800515E1A /* AppDelegate.m */; };
 		C5D4CEAC2007063800515E1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5D4CEAB2007063800515E1A /* Assets.xcassets */; };
 		C5D4CEAF2007063800515E1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5D4CEAD2007063800515E1A /* LaunchScreen.storyboard */; };
@@ -31,6 +34,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C594D3C82019BDEF00F5CC10 /* DragViewVer2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragViewVer2ViewController.h; sourceTree = "<group>"; };
+		C594D3C92019BDEF00F5CC10 /* DragViewVer2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragViewVer2ViewController.m; sourceTree = "<group>"; };
+		C594D3CF2019BEB500F5CC10 /* TwoItemRectDragView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoItemRectDragView.h; sourceTree = "<group>"; };
+		C594D3D02019BEB500F5CC10 /* TwoItemRectDragView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoItemRectDragView.m; sourceTree = "<group>"; };
+		C594D3D52019D14000F5CC10 /* TwoItemVtDragView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoItemVtDragView.h; sourceTree = "<group>"; };
+		C594D3D62019D14000F5CC10 /* TwoItemVtDragView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoItemVtDragView.m; sourceTree = "<group>"; };
 		C5D4CE9F2007063800515E1A /* DragAndCrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragAndCrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5D4CEA22007063800515E1A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C5D4CEA32007063800515E1A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -83,6 +92,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C594D3CB2019BE1600F5CC10 /* DragViewVer2ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C594D3C82019BDEF00F5CC10 /* DragViewVer2ViewController.h */,
+				C594D3C92019BDEF00F5CC10 /* DragViewVer2ViewController.m */,
+				C594D3CF2019BEB500F5CC10 /* TwoItemRectDragView.h */,
+				C594D3D02019BEB500F5CC10 /* TwoItemRectDragView.m */,
+				C594D3D52019D14000F5CC10 /* TwoItemVtDragView.h */,
+				C594D3D62019D14000F5CC10 /* TwoItemVtDragView.m */,
+			);
+			path = DragViewVer2ViewController;
+			sourceTree = "<group>";
+		};
 		C5D4CE962007063800515E1A = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				C5D4CEDE2007230B00515E1A /* DragViewController */,
+				C594D3CB2019BE1600F5CC10 /* DragViewVer2ViewController */,
 				C5D4CED82007225600515E1A /* DragAndResizeVer1ViewController */,
 				C5D4CED92007225F00515E1A /* DragAndResizeVer2ViewController */,
 				C5D4CEDA2007226800515E1A /* DragAndResizeVer3ViewController */,
@@ -304,6 +327,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C594D3CA2019BDEF00F5CC10 /* DragViewVer2ViewController.m in Sources */,
+				C594D3D12019BEB500F5CC10 /* TwoItemRectDragView.m in Sources */,
+				C594D3D72019D14000F5CC10 /* TwoItemVtDragView.m in Sources */,
 				C5D4CED1200717A100515E1A /* DragAndResizeVer1ViewController.m in Sources */,
 				C5D4CEDD2007230500515E1A /* DragAndResizeVer4ViewController.m in Sources */,
 				C5D4CEF520074E3C00515E1A /* UIView+ConvertRect.m in Sources */,

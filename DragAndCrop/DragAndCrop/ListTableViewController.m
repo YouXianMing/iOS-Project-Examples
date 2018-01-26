@@ -9,6 +9,7 @@
 #import "ListTableViewController.h"
 #import "ListTableViewModel.h"
 #import "DragViewController.h"
+#import "DragViewVer2ViewController.h"
 #import "DragAndResizeVer1ViewController.h"
 #import "DragAndResizeVer2ViewController.h"
 #import "DragAndResizeVer3ViewController.h"
@@ -32,6 +33,7 @@
     
     self.title  = @"DragAndCrop";
     self.models = @[[ListTableViewModel modelWithClass:[DragViewController class]              title:@"Pan手势移动view"],
+                    [ListTableViewModel modelWithClass:[DragViewVer2ViewController class]      title:@"矩形"],
                     [ListTableViewModel modelWithClass:[DragAndResizeVer1ViewController class] title:@"Pan手势改变frame 随意比例"],
                     [ListTableViewModel modelWithClass:[DragAndResizeVer2ViewController class] title:@"Pan手势改变frame (1:1)"],
                     [ListTableViewModel modelWithClass:[DragAndResizeVer3ViewController class] title:@"Pan手势改变frame (2:1)"],
