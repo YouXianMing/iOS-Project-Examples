@@ -11,7 +11,7 @@
 #import "UIView+DebugFrame.h"
 #import "CustomCell.h"
 
-@interface BaseViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface BaseViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, CustomCellDelegate>
 
 @property (nonatomic, strong) UIView                             *contentView;
 @property (nonatomic, strong) UITableView                        *tableView;

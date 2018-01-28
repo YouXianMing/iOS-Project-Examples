@@ -41,7 +41,7 @@
     
     [datas enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
-        [self.adapters addObject:[NormalDragViewCell dataAdapterWithData:obj cellHeight:50.f]];
+        [self.adapters addObject:[NormalDragViewCell dataAdapterWithData:obj cellHeight:60.f]];
     }];
 }
 

@@ -10,6 +10,8 @@
 #import "ListTableViewCell.h"
 #import "ListTableViewData.h"
 #import "MoveCellsViewController.h"
+#import "AddOrRemoveCellsViewController.h"
+#import "AddOrMoveOrDeleteViewController.h"
 
 @interface ListTableViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -38,7 +40,9 @@
     
     // adapters
     self.adapters  = [NSMutableArray array];
-    NSArray *datas = @[[ListTableViewData listTableViewDataWithClass:[MoveCellsViewController class] info:@"cell的移动"]];
+    NSArray *datas = @[[ListTableViewData listTableViewDataWithClass:[MoveCellsViewController class]         info:@"cell的移动"],
+                       [ListTableViewData listTableViewDataWithClass:[AddOrRemoveCellsViewController class]  info:@"添加删除cell"],
+                       [ListTableViewData listTableViewDataWithClass:[AddOrMoveOrDeleteViewController class] info:@"添加删除移动cell"]];
     [datas enumerateObjectsUsingBlock:^(ListTableViewData *obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
         [self.adapters addObject:[ListTableViewCell dataAdapterWithData:obj]];

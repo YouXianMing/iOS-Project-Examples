@@ -7,8 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C56967D2201C75F5007AA53F /* AddOrRemoveCellsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C56967D1201C75F5007AA53F /* AddOrRemoveCellsViewController.m */; };
+		C56967D6201C7676007AA53F /* AddOrRemoveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C56967D5201C7676007AA53F /* AddOrRemoveCell.m */; };
+		C56967D9201C768B007AA53F /* AddOrRemoveCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = C56967D8201C768B007AA53F /* AddOrRemoveCellData.m */; };
+		C56967DC201C798A007AA53F /* AddIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C56967DB201C798A007AA53F /* AddIconCell.m */; };
+		C56967DF201C844F007AA53F /* AddOrMoveOrDeleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C56967DE201C844F007AA53F /* AddOrMoveOrDeleteViewController.m */; };
+		C56967E3201C84F1007AA53F /* AddOrMoveOrDeleteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C56967E2201C84F1007AA53F /* AddOrMoveOrDeleteCell.m */; };
+		C56967E6201C8529007AA53F /* AddTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C56967E5201C8529007AA53F /* AddTableViewCell.m */; };
+		C56967E9201C8595007AA53F /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C56967E8201C8595007AA53F /* TitleCell.m */; };
+		C56967EC201C85DA007AA53F /* AddOrMoveOrDeleteCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = C56967EB201C85DA007AA53F /* AddOrMoveOrDeleteCellData.m */; };
+		C56967F6201D75BE007AA53F /* GCDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C56967F1201D75BD007AA53F /* GCDQueue.m */; };
+		C56967F7201D75BE007AA53F /* GCDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = C56967F2201D75BD007AA53F /* GCDGroup.m */; };
+		C56967F8201D75BE007AA53F /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = C56967F4201D75BD007AA53F /* GCDTimer.m */; };
+		C56967F9201D75BE007AA53F /* GCDSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = C56967F5201D75BE007AA53F /* GCDSemaphore.m */; };
 		C594D428201B4BD000F5CC10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C594D427201B4BD000F5CC10 /* AppDelegate.m */; };
-		C594D42E201B4BD000F5CC10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C594D42C201B4BD000F5CC10 /* Main.storyboard */; };
 		C594D430201B4BD000F5CC10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C594D42F201B4BD000F5CC10 /* Assets.xcassets */; };
 		C594D433201B4BD000F5CC10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C594D431201B4BD000F5CC10 /* LaunchScreen.storyboard */; };
 		C594D436201B4BD000F5CC10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C594D435201B4BD000F5CC10 /* main.m */; };
@@ -26,10 +38,36 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C56967D0201C75F5007AA53F /* AddOrRemoveCellsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddOrRemoveCellsViewController.h; sourceTree = "<group>"; };
+		C56967D1201C75F5007AA53F /* AddOrRemoveCellsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddOrRemoveCellsViewController.m; sourceTree = "<group>"; };
+		C56967D4201C7676007AA53F /* AddOrRemoveCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddOrRemoveCell.h; sourceTree = "<group>"; };
+		C56967D5201C7676007AA53F /* AddOrRemoveCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddOrRemoveCell.m; sourceTree = "<group>"; };
+		C56967D7201C768B007AA53F /* AddOrRemoveCellData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddOrRemoveCellData.h; sourceTree = "<group>"; };
+		C56967D8201C768B007AA53F /* AddOrRemoveCellData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddOrRemoveCellData.m; sourceTree = "<group>"; };
+		C56967DA201C798A007AA53F /* AddIconCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddIconCell.h; sourceTree = "<group>"; };
+		C56967DB201C798A007AA53F /* AddIconCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddIconCell.m; sourceTree = "<group>"; };
+		C56967DD201C844F007AA53F /* AddOrMoveOrDeleteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddOrMoveOrDeleteViewController.h; sourceTree = "<group>"; };
+		C56967DE201C844F007AA53F /* AddOrMoveOrDeleteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddOrMoveOrDeleteViewController.m; sourceTree = "<group>"; };
+		C56967E1201C84F1007AA53F /* AddOrMoveOrDeleteCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddOrMoveOrDeleteCell.h; sourceTree = "<group>"; };
+		C56967E2201C84F1007AA53F /* AddOrMoveOrDeleteCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddOrMoveOrDeleteCell.m; sourceTree = "<group>"; };
+		C56967E4201C8529007AA53F /* AddTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTableViewCell.h; sourceTree = "<group>"; };
+		C56967E5201C8529007AA53F /* AddTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTableViewCell.m; sourceTree = "<group>"; };
+		C56967E7201C8595007AA53F /* TitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleCell.h; sourceTree = "<group>"; };
+		C56967E8201C8595007AA53F /* TitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleCell.m; sourceTree = "<group>"; };
+		C56967EA201C85DA007AA53F /* AddOrMoveOrDeleteCellData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddOrMoveOrDeleteCellData.h; sourceTree = "<group>"; };
+		C56967EB201C85DA007AA53F /* AddOrMoveOrDeleteCellData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddOrMoveOrDeleteCellData.m; sourceTree = "<group>"; };
+		C56967ED201D75BC007AA53F /* GCDGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDGroup.h; sourceTree = "<group>"; };
+		C56967EE201D75BC007AA53F /* GCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
+		C56967EF201D75BD007AA53F /* GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCD.h; sourceTree = "<group>"; };
+		C56967F0201D75BD007AA53F /* GCDSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSemaphore.h; sourceTree = "<group>"; };
+		C56967F1201D75BD007AA53F /* GCDQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDQueue.m; sourceTree = "<group>"; };
+		C56967F2201D75BD007AA53F /* GCDGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDGroup.m; sourceTree = "<group>"; };
+		C56967F3201D75BD007AA53F /* GCDQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDQueue.h; sourceTree = "<group>"; };
+		C56967F4201D75BD007AA53F /* GCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
+		C56967F5201D75BE007AA53F /* GCDSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDSemaphore.m; sourceTree = "<group>"; };
 		C594D423201B4BD000F5CC10 /* UITableViewOperation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableViewOperation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C594D426201B4BD000F5CC10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C594D427201B4BD000F5CC10 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C594D42D201B4BD000F5CC10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C594D42F201B4BD000F5CC10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C594D432201B4BD000F5CC10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C594D434201B4BD000F5CC10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +107,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C56967D3201C7605007AA53F /* AddOrRemoveCellsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C56967D0201C75F5007AA53F /* AddOrRemoveCellsViewController.h */,
+				C56967D1201C75F5007AA53F /* AddOrRemoveCellsViewController.m */,
+				C56967D4201C7676007AA53F /* AddOrRemoveCell.h */,
+				C56967D5201C7676007AA53F /* AddOrRemoveCell.m */,
+				C56967D7201C768B007AA53F /* AddOrRemoveCellData.h */,
+				C56967D8201C768B007AA53F /* AddOrRemoveCellData.m */,
+				C56967DA201C798A007AA53F /* AddIconCell.h */,
+				C56967DB201C798A007AA53F /* AddIconCell.m */,
+			);
+			path = AddOrRemoveCellsViewController;
+			sourceTree = "<group>";
+		};
+		C56967E0201C845E007AA53F /* AddOrMoveOrDeleteViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C56967DD201C844F007AA53F /* AddOrMoveOrDeleteViewController.h */,
+				C56967DE201C844F007AA53F /* AddOrMoveOrDeleteViewController.m */,
+				C56967E7201C8595007AA53F /* TitleCell.h */,
+				C56967E8201C8595007AA53F /* TitleCell.m */,
+				C56967E1201C84F1007AA53F /* AddOrMoveOrDeleteCell.h */,
+				C56967E2201C84F1007AA53F /* AddOrMoveOrDeleteCell.m */,
+				C56967EA201C85DA007AA53F /* AddOrMoveOrDeleteCellData.h */,
+				C56967EB201C85DA007AA53F /* AddOrMoveOrDeleteCellData.m */,
+				C56967E4201C8529007AA53F /* AddTableViewCell.h */,
+				C56967E5201C8529007AA53F /* AddTableViewCell.m */,
+			);
+			path = AddOrMoveOrDeleteViewController;
+			sourceTree = "<group>";
+		};
 		C594D41A201B4BD000F5CC10 = {
 			isa = PBXGroup;
 			children = (
@@ -93,8 +163,9 @@
 				C594D43C201B4C5000F5CC10 /* ListTableViewController.h */,
 				C594D43D201B4C5000F5CC10 /* ListTableViewController.m */,
 				C594D456201B508B00F5CC10 /* MoveCellsViewController */,
+				C56967D3201C7605007AA53F /* AddOrRemoveCellsViewController */,
+				C56967E0201C845E007AA53F /* AddOrMoveOrDeleteViewController */,
 				C594D446201B4D1900F5CC10 /* libs */,
-				C594D42C201B4BD000F5CC10 /* Main.storyboard */,
 				C594D42F201B4BD000F5CC10 /* Assets.xcassets */,
 				C594D431201B4BD000F5CC10 /* LaunchScreen.storyboard */,
 				C594D434201B4BD000F5CC10 /* Info.plist */,
@@ -118,6 +189,15 @@
 				C594D448201B4D8000F5CC10 /* ListTableViewCell.m */,
 				C594D453201B4F8400F5CC10 /* ListTableViewData.h */,
 				C594D454201B4F8400F5CC10 /* ListTableViewData.m */,
+				C56967EF201D75BD007AA53F /* GCD.h */,
+				C56967ED201D75BC007AA53F /* GCDGroup.h */,
+				C56967F2201D75BD007AA53F /* GCDGroup.m */,
+				C56967F3201D75BD007AA53F /* GCDQueue.h */,
+				C56967F1201D75BD007AA53F /* GCDQueue.m */,
+				C56967F0201D75BD007AA53F /* GCDSemaphore.h */,
+				C56967F5201D75BE007AA53F /* GCDSemaphore.m */,
+				C56967EE201D75BC007AA53F /* GCDTimer.h */,
+				C56967F4201D75BD007AA53F /* GCDTimer.m */,
 				C594D457201B50B500F5CC10 /* BaseViewController.h */,
 				C594D458201B50B500F5CC10 /* BaseViewController.m */,
 			);
@@ -197,7 +277,6 @@
 			files = (
 				C594D433201B4BD000F5CC10 /* LaunchScreen.storyboard in Resources */,
 				C594D430201B4BD000F5CC10 /* Assets.xcassets in Resources */,
-				C594D42E201B4BD000F5CC10 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,17 +288,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				C594D462201B56F600F5CC10 /* NormalDragViewCellData.m in Sources */,
+				C56967F9201D75BE007AA53F /* GCDSemaphore.m in Sources */,
+				C56967E6201C8529007AA53F /* AddTableViewCell.m in Sources */,
 				C594D455201B4F8400F5CC10 /* ListTableViewData.m in Sources */,
+				C56967F6201D75BE007AA53F /* GCDQueue.m in Sources */,
+				C56967F8201D75BE007AA53F /* GCDTimer.m in Sources */,
+				C56967D9201C768B007AA53F /* AddOrRemoveCellData.m in Sources */,
 				C594D45F201B56CA00F5CC10 /* NormalDragViewCell.m in Sources */,
 				C594D459201B50B500F5CC10 /* BaseViewController.m in Sources */,
 				C594D436201B4BD000F5CC10 /* main.m in Sources */,
+				C56967DF201C844F007AA53F /* AddOrMoveOrDeleteViewController.m in Sources */,
 				C594D428201B4BD000F5CC10 /* AppDelegate.m in Sources */,
 				C594D445201B4D1600F5CC10 /* CellDataAdapter.m in Sources */,
 				C594D449201B4D8000F5CC10 /* ListTableViewCell.m in Sources */,
+				C56967E3201C84F1007AA53F /* AddOrMoveOrDeleteCell.m in Sources */,
 				C594D44F201B4E2900F5CC10 /* UIView+DebugFrame.m in Sources */,
 				C594D43E201B4C5000F5CC10 /* ListTableViewController.m in Sources */,
+				C56967DC201C798A007AA53F /* AddIconCell.m in Sources */,
+				C56967F7201D75BE007AA53F /* GCDGroup.m in Sources */,
 				C594D442201B4CEF00F5CC10 /* CustomCell.m in Sources */,
+				C56967D6201C7676007AA53F /* AddOrRemoveCell.m in Sources */,
 				C594D45C201B516600F5CC10 /* MoveCellsViewController.m in Sources */,
+				C56967D2201C75F5007AA53F /* AddOrRemoveCellsViewController.m in Sources */,
+				C56967EC201C85DA007AA53F /* AddOrMoveOrDeleteCellData.m in Sources */,
+				C56967E9201C8595007AA53F /* TitleCell.m in Sources */,
 				C594D44C201B4E1400F5CC10 /* UIView+SetRect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,14 +319,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C594D42C201B4BD000F5CC10 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C594D42D201B4BD000F5CC10 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C594D431201B4BD000F5CC10 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

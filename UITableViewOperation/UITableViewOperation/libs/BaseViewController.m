@@ -52,6 +52,7 @@
     cell.dataAdapter         = adapter;
     cell.data                = adapter.data;
     cell.indexPath           = indexPath;
+    cell.delegate            = self;
     [cell loadContent];
     
     return cell;
@@ -60,6 +61,12 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     return self.adapters[indexPath.row].cellHeight;
+}
+
+#pragma mark - CustomCellDelegate
+
+- (void)customCell:(CustomCell *)cell event:(id)event {
+    
 }
 
 @end
