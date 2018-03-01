@@ -37,7 +37,7 @@
     [self.adapters addObject:[TitleCell dataAdapterWithData:nil cellHeight:100.f]];
     
     // data
-    NSArray *strings = @[@"段落1"];
+    NSArray *strings = @[];
     [strings enumerateObjectsUsingBlock:^(NSString *string, NSUInteger idx, BOOL * _Nonnull stop) {
        
         [self.adapters addObject:[AddOrMoveOrDeleteCell dataAdapterWithData:[self dataWithString:string] cellHeight:60.f]];
