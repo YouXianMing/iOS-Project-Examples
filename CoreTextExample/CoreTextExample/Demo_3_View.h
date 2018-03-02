@@ -1,13 +1,13 @@
 //
-//  DrawView.h
+//  Demo3View.h
 //  CoreTextExample
 //
-//  Created by YouXianMing on 2017/7/20.
+//  Created by YouXianMing on 2017/7/19.
 //  Copyright © 2017年 TechCode. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface DrawView : UIView
+@interface Demo_3_View : UIView
 
 @end

@@ -6,10 +6,10 @@
 //  Copyright © 2017年 TechCode. All rights reserved.
 //
 
-#import "Demo3View.h"
+#import "Demo_3_View.h"
 #import <CoreText/CoreText.h>
 
-@implementation Demo3View
+@implementation Demo_3_View
 
 - (instancetype)initWithFrame:(CGRect)frame {
     
@@ -69,24 +69,26 @@
     CFRelease(path);
     CFRelease(frameSetter);
 }
-static CGFloat ascentCallBacks(void * ref)
-{
+
+static CGFloat ascentCallBacks(void * ref) {
+    
     return [(NSNumber *)[(__bridge NSDictionary *)ref valueForKey:@"height"] floatValue];
 }
-static CGFloat descentCallBacks(void * ref)
-{
+
+static CGFloat descentCallBacks(void * ref) {
+    
     return 0;
 }
-static CGFloat widthCallBacks(void * ref)
-{
+
+static CGFloat widthCallBacks(void * ref) {
+    
     return [(NSNumber *)[(__bridge NSDictionary *)ref valueForKey:@"width"] floatValue];
 }
 
-
--(CGRect)calculateImageRectWithFrame:(CTFrameRef)frame {
+- (CGRect)calculateImageRectWithFrame:(CTFrameRef)frame {
     
     NSArray * arrLines = (NSArray *)CTFrameGetLines(frame); // 根据frame获取需要绘制的线的数组
-    NSInteger count = [arrLines count]; // 获取线的数量
+    NSInteger count    = [arrLines count]; // 获取线的数量
     CGPoint points[count]; // 建立起点的数组（cgpoint类型为结构体，故用C语言的数组）
     CTFrameGetLineOrigins(frame, CFRangeMake(0, 0), points);
     
@@ -124,6 +126,7 @@ static CGFloat widthCallBacks(void * ref)
             return imageBounds;
         }
     }
+    
     return CGRectZero;
 }
 

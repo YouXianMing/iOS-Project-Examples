@@ -7,16 +7,17 @@
 //
 
 #import "ViewController.h"
-#import "DemoView.h"
-#import "Demo2View.h"
-#import "Demo3View.h"
-#import "Demo4View.h"
+#import "CellData.h"
+#import "Demo_1_ViewController.h"
+#import "Demo_2_ViewController.h"
+#import "Demo_3_ViewController.h"
+#import "Demo_4_ViewController.h"
+#import "Demo_5_ViewController.h"
 
-#import "DrawView.h"
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
-#import "CoreText_Examle_1_View.h"
-
-@interface ViewController ()
+@property (nonatomic, strong) NSArray <CellData *> *datas;
+@property (nonatomic, strong) UITableView          *tableView;
 
 @end
 
@@ -26,27 +27,46 @@
     
     [super viewDidLoad];
     
-//    DemoView *demoView = [[DemoView alloc] initWithFrame:self.view.bounds];
-//    [self.view addSubview:demoView];
+    self.datas = @[[CellData cellDataWithControllerClass:Demo_1_ViewController.class title:@"Demo_1"],
+                   [CellData cellDataWithControllerClass:Demo_2_ViewController.class title:@"Demo_2"],
+                   [CellData cellDataWithControllerClass:Demo_3_ViewController.class title:@"Demo_3"],
+                   [CellData cellDataWithControllerClass:Demo_4_ViewController.class title:@"Demo_4"],
+                   [CellData cellDataWithControllerClass:Demo_5_ViewController.class title:@"Demo_5"]];
     
-//    Demo2View *demoView = [[Demo2View alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-//    demoView.center     = self.view.center;
-//    [self.view addSubview:demoView];
+    self.tableView            = [[UITableView alloc] initWithFrame:self.view.bounds];
+    self.tableView.rowHeight  = 50.f;
+    self.tableView.delegate   = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
     
-//    Demo3View *demoView = [[Demo3View alloc] initWithFrame:CGRectMake(0, 0, 300, 300)];
-//    demoView.center     = self.view.center;
-//    [self.view addSubview:demoView];
+    [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:@"UITableViewCell"];
+}
+
+#pragma mark - UITableViewDelegate, UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-//    Demo4View *demoView = [[Demo4View alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-//    demoView.center     = self.view.center;
-//    [self.view addSubview:demoView];
+    return self.datas.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
+    CellData        *data = self.datas[indexPath.row];
+    cell.textLabel.text   = data.title;
+    cell.selectionStyle   = UITableViewCellSelectionStyleNone;
     
-//    DrawView *drawView = [[DrawView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-//    [self.view addSubview:drawView];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    CoreText_Examle_1_View *coreTextExample_1_view = [[CoreText_Examle_1_View alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    coreTextExample_1_view.center                  = self.view.center;
-    [self.view addSubview:coreTextExample_1_view];
+    CellData *data = self.datas[indexPath.row];
+    
+    BaseViewController *controller = [data.controllerClass new];
+    controller.title               = data.title;
+    
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 @end

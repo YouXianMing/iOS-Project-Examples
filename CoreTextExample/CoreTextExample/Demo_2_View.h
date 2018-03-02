@@ -1,5 +1,5 @@
 //
-//  CoreText_Examle_1_View.h
+//  DrawView.h
 //  CoreTextExample
 //
 //  Created by YouXianMing on 2017/7/20.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CoreText_Examle_1_View : UIView
+@interface Demo_2_View : UIView
 
 @end
+

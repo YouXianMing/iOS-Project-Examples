@@ -1,5 +1,5 @@
 //
-//  Demo3View.h
+//  Demo2View.h
 //  CoreTextExample
 //
 //  Created by YouXianMing on 2017/7/19.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Demo3View : UIView
+@interface Demo_4_View : UIView
 
 @end

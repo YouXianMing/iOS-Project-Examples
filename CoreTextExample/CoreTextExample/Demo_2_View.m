@@ -6,9 +6,9 @@
 //  Copyright © 2017年 TechCode. All rights reserved.
 //
 
-#import "DrawView.h"
+#import "Demo_2_View.h"
 
-@implementation DrawView
+@implementation Demo_2_View
 
 - (instancetype)initWithFrame:(CGRect)frame {
     

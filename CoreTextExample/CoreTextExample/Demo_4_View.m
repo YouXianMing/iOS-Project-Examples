@@ -6,10 +6,10 @@
 //  Copyright © 2017年 TechCode. All rights reserved.
 //
 
-#import "Demo2View.h"
+#import "Demo_4_View.h"
 #import <CoreText/CoreText.h>
 
-@interface Demo2View () {
+@interface Demo_4_View () {
     
     CGRect _pathRect;
     CGRect _nsPathRect;
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation Demo2View
+@implementation Demo_4_View
 
 - (instancetype)initWithFrame:(CGRect)frame {
     
@@ -31,10 +31,10 @@
         _pathRect   = CGRectMake(5, 10, width, height);
         _nsPathRect = CGRectMake(5, self.bounds.size.height - height - 10.f, width, height);
         
-//        self.debug_1_View                        = [[UIView alloc] initWithFrame:_pathRect];
-//        self.debug_1_View.backgroundColor        = [[UIColor redColor] colorWithAlphaComponent:0.1f];
-//        self.debug_1_View.userInteractionEnabled = NO;
-//        [self addSubview:self.debug_1_View];
+        self.debug_1_View                        = [[UIView alloc] initWithFrame:_pathRect];
+        self.debug_1_View.backgroundColor        = [[UIColor redColor] colorWithAlphaComponent:0.1f];
+        self.debug_1_View.userInteractionEnabled = NO;
+        [self addSubview:self.debug_1_View];
         
         self.debug_2_View                        = [[UIView alloc] initWithFrame:_nsPathRect];
         self.debug_2_View.backgroundColor        = [[UIColor redColor] colorWithAlphaComponent:0.1f];

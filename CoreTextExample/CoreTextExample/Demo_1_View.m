@@ -1,15 +1,15 @@
 //
-//  Demo4View.m
+//  CoreText_Examle_1_View.m
 //  CoreTextExample
 //
-//  Created by YouXianMing on 2017/7/19.
+//  Created by YouXianMing on 2017/7/20.
 //  Copyright © 2017年 TechCode. All rights reserved.
 //
 
-#import "Demo4View.h"
+#import "Demo_1_View.h"
 #import <CoreText/CoreText.h>
 
-@interface Demo4View () {
+@interface Demo_1_View () {
     
     CGRect          _drawFrame;
     CTFrameRef      _frame;
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation Demo4View
+@implementation Demo_1_View
 
 - (instancetype)initWithFrame:(CGRect)frame {
     
@@ -31,7 +31,7 @@
         self.layer.borderColor = [UIColor redColor].CGColor;
         
         _CTRunFrames = [NSMutableArray array];
-        _drawFrame   = CGRectMake(5, 30, 85, 75);
+        _drawFrame   = [self alignCenterFlipFrame:CGRectMake(5, 5, 85, 75)];
     }
     
     return self;
@@ -60,15 +60,30 @@
     CTFrameRef       frame       = CTFramesetterCreateFrame(framesetter, CFRangeMake(0, contentAttrString.length), path, NULL);
     _frame = frame;
     
-    // CTM transform
-//    CGContextSetTextMatrix(context, CGAffineTransformIdentity);
-//    CGContextTranslateCTM(context, 0, self.bounds.size.height);
-//    CGContextScaleCTM(context, 1.0, -1.0);
-    
     [self debugFrame:frame context:context];
     
-    // Draw
+    // CTM transform
+    CGContextSetTextMatrix(context, CGAffineTransformIdentity);
+    CGContextTranslateCTM(context, 0, self.bounds.size.height);
+    CGContextScaleCTM(context, 1.0, -1.0);
+    
+    // Draw Text
     CTFrameDraw(frame, context);
+    
+    // 描边draw区域
+    CGContextSetLineWidth(context, 0.5f);
+    CGContextSetRGBStrokeColor(context, 0, 1, 1, 1.0);
+    CGContextStrokeRect(context, _drawFrame); // 在执行了 CTM transform 之后, _drawFrame 相当于在内部做了镜像翻转
+    
+    // 绘制每个CTRun的边框
+    [_CTRunFrames enumerateObjectsUsingBlock:^(NSValue *value, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        CGRect rect = [value CGRectValue];
+        
+        CGContextSetLineWidth(context, 0.5f);
+        CGContextSetRGBStrokeColor(context, 0, 0, 0, 1.0);
+        CGContextStrokeRect(context, rect); // 在执行了 CTM transform 之后, rect 相当于在内部做了镜像翻转
+    }];
     
     // Release
     CFRelease(frame);
@@ -78,13 +93,8 @@
 
 - (void)debugFrame:(CTFrameRef)frame context:(CGContextRef)context {
     
-    // 以NS坐标系的frame值为输入绘制stroke
-    CGContextSetLineWidth(context, 0.5f);
-    CGContextSetRGBStrokeColor(context, 0, 1, 1, 1.0);
-    CGContextStrokeRect(context, _drawFrame);
-    
     // 根据frame获取需要绘制的CTLine数组
-    NSArray   *arrLines = (NSArray *)CTFrameGetLines(frame);
+    NSArray *arrLines = (NSArray *)CTFrameGetLines(frame);
     
     // 获取CTLine的数量
     NSInteger count = [arrLines count];
@@ -129,37 +139,29 @@
             CGRect    relativeRect              = CGPathGetBoundingBox(pathRef);
             CGRect    relativeCoreTextRunBounds = CGRectOffset(coreTextRunBounds, relativeRect.origin.x, relativeRect.origin.y);
             
-            NSLog(@"NS绝对frame : %@", NSStringFromCGRect(coreTextRunBounds));
-            NSLog(@"NS相对frame : %@", NSStringFromCGRect(relativeCoreTextRunBounds));
-
+            // 存储倒置的frame(倒着的文本的frame)
             [_CTRunFrames addObject:[NSValue valueWithCGRect:relativeCoreTextRunBounds]];
             
-            // 以NS坐标系的frame值为输入绘制stroke
-            CGContextSetLineWidth(context, 0.5f);
-            CGContextSetRGBStrokeColor(context, 0, 0, 0, 1.0);
-            CGContextStrokeRect(context, relativeCoreTextRunBounds);
-            
-            // 以NS坐标系的frame值为输入绘图
-//            UIImage *image = [UIImage imageNamed:@"gray"];
-//            CGContextDrawImage(context, relativeCoreTextRunBounds, image.CGImage);
+            NSLog(@"镜像翻转前的frame : %@", NSStringFromCGRect(relativeCoreTextRunBounds));
+            NSLog(@"镜像翻转后的frame : %@", NSStringFromCGRect([self alignCenterFlipFrame:relativeCoreTextRunBounds]));
         }
     }
 }
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
     UITouch *touch   = [touches anyObject];
     CGPoint location = [self NSPointFromScreenPoint:[touch locationInView:self]];
     NSLog(@"NS坐标点: %@", NSStringFromCGPoint(location));
     NSLog(@"坐标点  : %@", NSStringFromCGPoint([touch locationInView:self]));
-
+    
     [_CTRunFrames enumerateObjectsUsingBlock:^(NSValue *value, NSUInteger idx, BOOL * _Nonnull stop) {
         
         CGRect rect = [value CGRectValue];
         if ([self isFrame:rect containsPoint:location]) {
             
             NSLog(@"NSFrame %@", NSStringFromCGRect(rect));
-            NSLog(@"Frame   %@", NSStringFromCGRect([self normalFrameWithNSFrame:rect]));
+            NSLog(@"Frame   %@", NSStringFromCGRect([self alignCenterFlipFrame:rect]));
             *stop = YES;
         }
     }];
@@ -179,12 +181,12 @@
 }
 
 /**
- 将NS坐标系的frame转换成正常frame
-
- @param frame NS坐标系的frame值
- @return 正常坐标系的frame
+ 将frame进行坐标系居中翻转
+ 
+ @param frame 被翻转的frame
+ @return 翻转后的frame
  */
-- (CGRect)normalFrameWithNSFrame:(CGRect)frame {
+- (CGRect)alignCenterFlipFrame:(CGRect)frame {
     
     return CGRectMake(frame.origin.x, self.bounds.size.height - frame.origin.y - frame.size.height, frame.size.width, frame.size.height);
 }
