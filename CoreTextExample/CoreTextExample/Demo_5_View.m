@@ -73,7 +73,7 @@
                                                                             attributes:attributes];
     
 
-    NSLog(@"%.2f", [contentAttrString coreTextHeightWithFixedWidth:_drawFrame.size.width]);
+    NSLog(@"%.2f", [contentAttrString coreTextHeightWithFixedWidth:_drawFrame.size.width]); // 计算coreText文本的高度
     
     // Context
     CGContextRef context = UIGraphicsGetCurrentContext();
