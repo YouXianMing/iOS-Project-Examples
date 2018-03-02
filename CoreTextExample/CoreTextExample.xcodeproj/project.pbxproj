@@ -23,6 +23,8 @@
 		C57B97962048E7AE006547EE /* Demo_5_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57B97952048E7AE006547EE /* Demo_5_ViewController.m */; };
 		C57B979B2048E839006547EE /* Demo_5_View.m in Sources */ = {isa = PBXBuildFile; fileRef = C57B97972048E839006547EE /* Demo_5_View.m */; };
 		C57B979C2048E839006547EE /* NSAttributedString+LabelWidthAndHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = C57B979A2048E839006547EE /* NSAttributedString+LabelWidthAndHeight.m */; };
+		C57B97A02048EAFA006547EE /* Demo_6_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57B979F2048EAFA006547EE /* Demo_6_ViewController.m */; };
+		C57B97A52048EC80006547EE /* Demo_6_View.m in Sources */ = {isa = PBXBuildFile; fileRef = C57B97A42048EC80006547EE /* Demo_6_View.m */; };
 		C5D306E71F1EFF1C007EC0A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D306E61F1EFF1C007EC0A7 /* main.m */; };
 		C5D306EA1F1EFF1C007EC0A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D306E91F1EFF1C007EC0A7 /* AppDelegate.m */; };
 		C5D306ED1F1EFF1C007EC0A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D306EC1F1EFF1C007EC0A7 /* ViewController.m */; };
@@ -64,6 +66,10 @@
 		C57B97982048E839006547EE /* NSAttributedString+LabelWidthAndHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+LabelWidthAndHeight.h"; sourceTree = "<group>"; };
 		C57B97992048E839006547EE /* Demo_5_View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo_5_View.h; sourceTree = "<group>"; };
 		C57B979A2048E839006547EE /* NSAttributedString+LabelWidthAndHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+LabelWidthAndHeight.m"; sourceTree = "<group>"; };
+		C57B979E2048EAFA006547EE /* Demo_6_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo_6_ViewController.h; sourceTree = "<group>"; };
+		C57B979F2048EAFA006547EE /* Demo_6_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_6_ViewController.m; sourceTree = "<group>"; };
+		C57B97A22048EB22006547EE /* Demo_6_View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo_6_View.h; sourceTree = "<group>"; };
+		C57B97A42048EC80006547EE /* Demo_6_View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo_6_View.m; sourceTree = "<group>"; };
 		C5D306E21F1EFF1C007EC0A7 /* CoreTextExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreTextExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5D306E61F1EFF1C007EC0A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C5D306E81F1EFF1C007EC0A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -166,6 +172,17 @@
 			name = Demo_5_ViewController;
 			sourceTree = "<group>";
 		};
+		C57B979D2048EAE5006547EE /* Demo_6_ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C57B979E2048EAFA006547EE /* Demo_6_ViewController.h */,
+				C57B979F2048EAFA006547EE /* Demo_6_ViewController.m */,
+				C57B97A22048EB22006547EE /* Demo_6_View.h */,
+				C57B97A42048EC80006547EE /* Demo_6_View.m */,
+			);
+			name = Demo_6_ViewController;
+			sourceTree = "<group>";
+		};
 		C5D306D91F1EFF1C007EC0A7 = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +211,7 @@
 				C57B978A2048E4F3006547EE /* Demo_3_ViewController */,
 				C57B978E2048E5A6006547EE /* Demo_4_ViewController */,
 				C57B97932048E799006547EE /* Demo_5_ViewController */,
+				C57B979D2048EAE5006547EE /* Demo_6_ViewController */,
 				C5D306EE1F1EFF1C007EC0A7 /* Main.storyboard */,
 				C5D306F11F1EFF1C007EC0A7 /* Assets.xcassets */,
 				C5D306F31F1EFF1C007EC0A7 /* LaunchScreen.storyboard */,
@@ -296,6 +314,7 @@
 				C57B979B2048E839006547EE /* Demo_5_View.m in Sources */,
 				C5D307041F1F4048007EC0A7 /* Demo_3_View.m in Sources */,
 				C51A8B9C1F209881006CEC2C /* UIView+RectSystem.m in Sources */,
+				C57B97A02048EAFA006547EE /* Demo_6_ViewController.m in Sources */,
 				C57B978D2048E504006547EE /* Demo_3_ViewController.m in Sources */,
 				C5D306EA1F1EFF1C007EC0A7 /* AppDelegate.m in Sources */,
 				C57B97912048E5D3006547EE /* Demo_4_ViewController.m in Sources */,
@@ -307,6 +326,7 @@
 				C57B97812048E24E006547EE /* Demo_1_ViewController.m in Sources */,
 				C57B979C2048E839006547EE /* NSAttributedString+LabelWidthAndHeight.m in Sources */,
 				C5D306E71F1EFF1C007EC0A7 /* main.m in Sources */,
+				C57B97A52048EC80006547EE /* Demo_6_View.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

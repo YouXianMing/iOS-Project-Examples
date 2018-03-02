@@ -13,6 +13,7 @@
 #import "Demo_3_ViewController.h"
 #import "Demo_4_ViewController.h"
 #import "Demo_5_ViewController.h"
+#import "Demo_6_ViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -31,7 +32,8 @@
                    [CellData cellDataWithControllerClass:Demo_2_ViewController.class title:@"Demo_2"],
                    [CellData cellDataWithControllerClass:Demo_3_ViewController.class title:@"Demo_3"],
                    [CellData cellDataWithControllerClass:Demo_4_ViewController.class title:@"Demo_4"],
-                   [CellData cellDataWithControllerClass:Demo_5_ViewController.class title:@"Demo_5"]];
+                   [CellData cellDataWithControllerClass:Demo_5_ViewController.class title:@"Demo_5"],
+                   [CellData cellDataWithControllerClass:Demo_6_ViewController.class title:@"Demo_6"]];
     
     self.tableView            = [[UITableView alloc] initWithFrame:self.view.bounds];
     self.tableView.rowHeight  = 50.f;
