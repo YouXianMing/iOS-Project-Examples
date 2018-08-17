@@ -12,6 +12,8 @@
 
 @end
 
+#define Localized(key)  [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"]] ofType:@"lproj"]] localizedStringForKey:(key) value:nil table:@"Localizable"]
+
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -21,11 +23,8 @@
     UILabel *label      = [[UILabel alloc] initWithFrame:self.view.bounds];
     label.textAlignment = NSTextAlignmentCenter;
     label.textColor     = [UIColor blackColor];
-    label.text          = NSLocalizedString(@"title", @"");
+    label.text          = Localized(@"title");
     [self.view addSubview:label];
-    
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:NSLocalizedString(@"icon", @"")]];
-    [self.view addSubview:imageView];
 }
 
 @end
