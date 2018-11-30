@@ -1,15 +1,12 @@
 //
 //  AppDelegate.m
-//  UICollectionView
+//  ColorPickerDemo
 //
-//  Created by YouXianMing on 2017/7/10.
-//  Copyright © 2017年 TechCode. All rights reserved.
+//  Created by YouXianMing on 2018/11/30.
+//  Copyright © 2018 YouXianMing. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "FlowLayoutViewController.h"
-#import "GridLayoutViewController.h"
-#import "ComplexGridLayoutViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,14 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    // Init window.
-    self.window                    = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor    = [UIColor whiteColor];
-    self.window.rootViewController = [FlowLayoutViewController new];
-    
-    [self.window makeKeyAndVisible];
-    
+    // Override point for customization after application launch.
     return YES;
 }
 

@@ -20,7 +20,7 @@
     [super viewDidLoad];
     
     // 获取1024的图片
-    UIImage *sourceImage = [UIImage imageNamed:@"tou"];
+    UIImage *sourceImage = [UIImage imageNamed:@"new.png"];
     
     // 根据原始图片生成图片
     [PNGManager createPNGsWithSourceImage:sourceImage pngsBlock:^(NSMutableArray<PNG *> *pngs) {
